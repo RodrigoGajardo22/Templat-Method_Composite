@@ -10,4 +10,4 @@ public class LogTransaction {
 
 	}
 
-}
+} // ¿Esto se testea?

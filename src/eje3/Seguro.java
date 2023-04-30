@@ -1,13 +1,13 @@
 package eje3;
 
-public abstract class Seguro implements Componente {
+public abstract class Seguro {
 
-	protected float valor;
+	protected float  valor;
 	protected String nombre;
 
 	public Seguro(float valor, String nombre) {
 
-		this.valor = valor;
+		this.valor  = valor;
 		this.nombre = nombre;
 	}
 

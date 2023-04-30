@@ -1,4 +1,4 @@
-package test_eje3;
+package test.eje3;
 
 import static org.junit.Assert.assertTrue;
 
@@ -18,13 +18,10 @@ class Test_eje3 {
 		// Set UP
 		Seguro hogar1, medico1, vida1, auto1;
 
-		hogar1 = new Hogar(1500, "Hogar");
-
+		hogar1  = new Hogar(1500, "Hogar");
 		medico1 = new Medico(2000, "Medico");
-
-		vida1 = new Vida(1500, "Vida");
-
-		auto1 = new Automovil(1000, "Auto");
+		vida1   = new Vida(1500, "Vida");
+		auto1   = new Automovil(1000, "Auto");
 
 		Paquete combo1 = new Paquete(200, "Combo Basico");
 

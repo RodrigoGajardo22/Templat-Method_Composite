@@ -3,9 +3,9 @@ package eje5;
 public class Nacional extends Remera {
 
 	// porsentajes;
-	private final float transporte = 0.015f;
+	private final float transporte   = 0.015f;
 	private final float bonificacion = 0.2f;
-	private final float aplicativo = 0.15f;
+	private final float aplicativo   = 0.15f;
 
 	public Nacional(float precio) {
 		super(precio);

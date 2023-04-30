@@ -1,4 +1,4 @@
-package test_ejercicio1;
+package test.eje1;
 
 import static org.junit.Assert.assertTrue;
 
@@ -29,7 +29,7 @@ class test_eje1 {
 
 		CompositeLiderProyecto G1 = new Gerente(4000, "Ariel - G1");
 		CompositeLiderProyecto G2 = new Gerente(4000, "Gloria - G2");
-		CompositeLiderProyecto G3 = new Gerente(4500, "Noelia - G3");
+		CompositeLiderProyecto G3 = new Gerente(4500, "Noelia - G3"); 
 
 		CompositeLiderProyecto D1 = new Director(5000, "Rodrigo - D1");
 		CompositeLiderProyecto D2 = new Director(5000, "Emilio - D2");

@@ -1,4 +1,4 @@
-package test_eje5;
+package test.eje5;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -12,9 +12,9 @@ class test_eje5 {
 
 	@Test
 	void testNacionales() {
-		Remera remera = new Nacional(100);
-		float precio = remera.precio();
 
+		Remera remera     = new Nacional(100);
+		float  precio     = remera.precio();
 		double redondeado = Math.round(precio * 100.0) / 100.0;
 
 		assertEquals(93.38, redondeado);
@@ -23,8 +23,8 @@ class test_eje5 {
 
 	@Test
 	void testImporadas() {
-		Remera remera = new Importada(100);
-		float precio = remera.precio();
+		Remera remera     = new Importada(100);
+		float  precio     = remera.precio();
 		double redondeado = Math.round(precio * 100.0) / 100.0;
 
 		assertEquals(135.19, redondeado);

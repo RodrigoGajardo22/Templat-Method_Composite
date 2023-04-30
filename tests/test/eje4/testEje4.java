@@ -1,4 +1,4 @@
-package test_eje4;
+package test.eje4;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -16,7 +16,7 @@ class testEje4 {
 	void testJubiladoSinPromocion() {
 		Calculador calculador = new CalculadorJubilado(LocalDate.now().getMonth().getValue() - 1);
 
-		double resultado = calculador.calcularPrecio(100);
+		double     resultado  = calculador.calcularPrecio(100);
 
 		assertEquals(110d, resultado, 0.01f);
 	}
@@ -25,7 +25,7 @@ class testEje4 {
 	void testJubiladoConPromocion() {
 		Calculador calculador = new CalculadorJubilado(LocalDate.now().getMonth().getValue());
 
-		double resultado = calculador.calcularPrecio(100);
+		double     resultado  = calculador.calcularPrecio(100);
 
 		assertEquals(100d, resultado, 0.01f);
 
@@ -35,7 +35,7 @@ class testEje4 {
 	void testNoJubiladoConPromocion() {
 		Calculador calculador = new CalculadorNoJubilado(LocalDate.now().getMonth().getValue());
 
-		double resultado = calculador.calcularPrecio(100);
+		double     resultado  = calculador.calcularPrecio(100);
 
 		assertEquals(115d, resultado, 0.01f);
 	}
@@ -44,7 +44,7 @@ class testEje4 {
 	void testNoJubiladoSinPromocion() {
 		Calculador calculador = new CalculadorNoJubilado(LocalDate.now().getMonth().getValue() - 1);
 
-		double resultado = calculador.calcularPrecio(100);
+		double     resultado  = calculador.calcularPrecio(100);
 
 		assertEquals(121d, resultado, 0.01f);
 
